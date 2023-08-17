@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    background-image: url("https://wallpaperaccess.com/full/3063067.png");   
+    min-height: 100vh;
+    height: auto;
+    display:grid;
+    place-content: center;
+}
+.mainbox{
+    width: 80vw;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.header{
+    margin-top:40px;
+    text-align: center;
+    
+}
+.header img{
+    clip-path: circle();
+    width: 100px;
+}
+.header h1{
+    font-size: 4em;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: #23ddeb;
+}
+
+.products{
+    width: 100%;
+    align-self: center;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.product{
+    position: relative;
+    background-color:#ffffff;
+    width: 350px;
+    height: 100%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 40px;
+    border-radius: 10px;
+    transition: .3s;
+}
+.image{
+    width:100%;
+    height: 60%;
+    display: grid;
+    place-content: center;
+}
+.image img{
+    width:200px;
+
+}
+.namePrice{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.namePrice h3{
+    font-size: 2em;
+    text-transform: capitalize;
+    color: #1b2741;
+}
+.namePrice span{
+    font-size: 1.5em;
+    color: #f67034;
+}
+.product p{
+    font-size: 18px;
+    line-height: 25px;
+}
+.stars svg{
+    font-size: 1.3em;
+    color: #f67034;
+}
+.buy{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.buy button{
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    background: linear-gradient(135deg, #753370 0%,#298096 );
+    color: #f7f6f9;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+}
+.buy button:hover{
+    transform: scale(1.1);
+}

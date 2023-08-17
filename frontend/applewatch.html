@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Apple Watch</title>
+    <link rel="icon" type="x-icon" href="MR logo2.jfif">
+    <style>
+        *{
+            margin: auto;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body{
+            background-image: url("https://wallpaperaccess.com/full/3063067.png");
+            min-height: 100vh;
+            display: grid;
+            place-items:center;
+            overflow: hidden;
+        }
+        body .logo{
+            clip-path: circle();
+            width: 70px;
+            margin-left: 30px;
+            margin-top: 5px;
+        }
+        .main_box{
+            position: relative;
+    margin-top: 10px;
+    background-color: #ffffff;
+    width: 350px;
+    height:100%;
+    box-shadow: 0 5px 20px #070707;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px;
+    border-radius: 10px;
+}
+        .img{
+            width: 100%;
+            display: grid;
+            place-items:center;
+        }
+        .img img{
+            width: 220px;
+        }
+        .name h1{
+            font-size: 3em;
+            text-transform: capitalize;
+            color: #07aeb9;
+
+        }
+        
+        .product{
+            display: inline-block;
+        }
+        .product p{
+            text-align: center;
+            padding: 15px;
+        }
+        .rating label{
+            float: right;
+            color: #888;
+        }
+        .rating h4{
+            float: left;
+            padding: 5px;
+    
+        }
+        .rating .offer{
+            color: rgb(43, 238, 59);
+            font-size: 20px;
+        }
+        .rating .mrp{
+            color: #888;
+            text-decoration: line-through;
+            font-size: 20px;
+            
+        }
+        .rating .rate{
+            color: #000000;
+            font-weight:bold;
+            font-size: 20px;
+        }
+        
+        .rating input{
+            display: none;
+        }
+        .rating label:before{
+            content: '\2605';
+            font-size: 20px;
+        }
+        .rating input:checked ~ label{
+            color: #ffcc00;
+        }
+        
+
+.product .button{
+    padding: 10px 14px;
+    border-radius: 7px;
+    border: none;
+    width: 100%;
+    
+    text-decoration: none;
+    color: #f7f6f9;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+}
+.product .button:hover{
+            transform: scale(1.1);
+        }
+</style>
+<script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+</head>
+<body>
+    <img class="logo" src="MR logo2.jfif">
+    <form id="paymentForm" action="payment" method="post">
+        <div class="main_box">
+            <div class="img">
+                <img src="applewatch.jpg"></div>
+            <div class="name">
+                <h1>Apple Watch
+                </h1>
+            </div>
+            <div class="product">
+                <p>Apple Watch Series 8 GPS with ECG app,Temperature sensor,IPX6,1.99 inch Display SmartWatch</p>
+                <div class="rating">
+                    <h4 class="offer">50% off</h4><h4 class="mrp">$180.00</h4><h4 class="rate">$90.00</h4>
+                    <input type="radio"id="star5" name="rating" value="5">
+                    <label for="star5"></label>
+                    <input type="radio"id="star4" name="rating" value="5">
+                    <label for="star4"></label>
+                    <input type="radio"id="star3" name="rating" value="5">
+                    <label for="star3"></label>
+                    <input type="radio"id="star2" name="rating" value="5">
+                    <label for="star2"></label>
+                    <input type="radio"id="star1" name="rating" value="5">
+                    <label for="star1"></label>
+               </div>
+
+            <stripe-buy-button class="button"
+                buy-button-id="buy_btn_1NQPlsSG32Quixt0JrwI5ObO"
+                publishable-key="pk_test_51NLkF6SG32Quixt05PwiOqDTz4BLhbyRKgNKdicnjXXZSVF1kUKRlb9id4QqfaRUGQkUKOy4N8j7UZwU8Hs3L3Bi00bG1oBfPD"
+            >
+            </stripe-buy-button>
+                
+            </div>
+
+        </div>
+    </form> 
+</body>
+<script>
+    
+    
+</script>
+</html>

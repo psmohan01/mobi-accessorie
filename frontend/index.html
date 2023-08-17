@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moblie Accessories</title>
+    <script src="https://js.stripe.com/v3/"></script>
+    <link rel="icon" type="x-icon" href="MR logo2.jfif">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <div class="mainbox">
+
+        <div class="header">
+            <img src="MR logo2.jfif">
+             <h1>MR Mobile's & Accessories</h1>
+        </div>
+
+        <div class="products">
+            
+            <div class="product">
+                <div class="image">
+                    <img src="boat-airdopes-125-front.jpg">
+                </div>
+                <div class="namePrice">
+                    <h3>airpods</h3>
+                    <span>$ 15.00</span>
+                </div>
+                <p>Boat airpods Z1 with IPX5 sweat, 40Hrs Playtime...</p>
+                
+                <div class="buy">
+                    <button onclick="airpods()" id="airpods">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="image">
+                    <img src="iphones.jpg">
+                </div>
+                <div class="namePrice">
+                    <h3>Iphone</h3>
+                    <span>$ 150.00</span>
+                </div>
+                <p>Iphone 14 pro,RAM: 6GB,Internal Storage:128GB... </p>
+                
+                <div class="buy">
+                    <button onclick="iphone()">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="image">
+                    <img src="applewatch.jpg">
+                </div>
+                <div class="namePrice">
+                    <h3>Apple Watch</h3>
+                    <span>$ 90.00</span>
+                </div>
+                <p>Apple Watch Series 8 GPS with ECG apps...</p>
+                <div class="buy">
+                    <button onclick="applewatch()">Add to Cart</button>
+                </div>
+            </div>
+            
+
+            
+        </div>
+    </div>
+    
+    
+</body>
+<script>
+     function airpods(){
+        window.location.href ="airpods.html";
+    }
+    function iphone(){
+        window.location.href ="iphone.html";
+    }
+    function applewatch(){
+        window.location.href ="applewatch.html";
+    }
+   
+</script>
+</html>
